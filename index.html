@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>BOOK🪱SH</title>
+    <link rel="shortcut icon" href="book.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <div><img src="book (1).png" alt="book" id="topBook" /></div>
+        <div><h1>BOOK🪱SH</h1></div>
+        <div><button class="add" id="addBtn">Add Book</button></div>
+        <div><hr /></div>
+      </div>
+      <div class="middle">
+        <div id="bookCards">
+          <h3>Title</h3>
+          <h5>by</h5>
+          <h6>pages</h6>
+          <div>
+            <button class="isRead">Read</button>
+            <button class="delete">Delete</button>
+          </div>
+          
+          <div class="bottomCard">
+            <h5>Read</h5>
+          </div>
+          
+
+        </div>
+        <!-- <h2>Your library is empty!</h2>
+        <p>Click the "Add Book" button above to save a new book.</p> -->
+        <hr />
+      </div>
+      <div class="formPage">
+        <div class="formPopup">
+          <h2 class="popupTitle">Add Book</h2>
+          <hr />
+          <form class="form">
+            <label for="bookname">Title:</label>
+            <input
+              type="text"
+              id="bookName"
+              required
+              placeholder="Ex:Les Miserables"
+            />
+            <p>What is the title of your book?</p>
+            <label for="author">Author:</label>
+            <input
+              type="text"
+              id="authorName"
+              required
+              placeholder="Ex:Victor"
+            />
+            <p>Who wrote your book?</p>
+            <label for="pages">Pages:</label>
+            <input
+              type="number"
+              id="pages"
+              required
+              placeholder="Ex: 465"
+              min="1"
+            />
+            <p>How long is your book in pages?</p>
+            <label for="date">Date:</label>
+            <input type="date" id="date" required placeholder="Ex:17/09/2022" />
+            <p>When did you read this book?</p>
+            <div class="checkbox">
+              <input
+                type="checkbox"
+                id="readCheck"
+                name="readValue"
+                value="Read"
+              />
+              <label for="readCheck" class="read">Read</label>
+            </div>
+          </form>
+          <hr />
+          <div class="bottomBtn">
+            <button class="cancel">Cancel</button>
+            <button class="save">Save</button>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div><h3>What is this thing?</h3></div>
+        <div>
+          <p>
+            This book tracking website containes HTML, CSS and Vanilla
+            JavaScript.
+          </p>
+        </div>
+        <div>
+          <p>
+            I followed the
+            <a href="https://www.theodinproject.com/paths/full-stack-javascript"
+              >The Odin Project's Full Stack JavaScript Path curriculum</a
+            >
+            to practice.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="copyright"><p>Copyright © 2022 Aysu Akbaba</p></div>
+      <div>
+        <button class="button">
+          <a href="https://github.com/aysuakbaba"
+            >View my Github profile</a
+          >
+        </button>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
