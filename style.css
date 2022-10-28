@@ -25,10 +25,8 @@ body{
 
 .middle{
     display:none;
-    grid-column: 50% 50%;
-    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 5px;
-    width: 28rem;
+    grid-template-columns: 50% 50%;
+    width: 27rem;
     margin: auto;
 
 }
@@ -70,7 +68,7 @@ hr{
 
 .formPopup{
     position: relative;
-    height: 540px;
+    height: 550px;
     padding-top: 15px;
     padding-bottom: 25px;
     padding-left: 20px;
@@ -93,6 +91,8 @@ hr{
 
 input{
     height: 25px;
+    font-family: 'Bree Serif', serif;
+
 }
 
 .checkbox{
@@ -104,6 +104,13 @@ input{
 .read{
     padding-top: 5px;
 }
+
+.notReadBtn{
+    background-color: white;
+    border: 1px solid green;
+    color: green;
+}
+
 
 .bottomBtn{
     display: flex;
@@ -213,7 +220,17 @@ button:hover{
 }
 
 a{
-    text-decoration: none;  
+    text-decoration: none; 
+    color: black; 
+}
+.git{
+    text-decoration: none; 
+    color: black;
+
+}
+.git:hover{
+    color: white;
+
 }
 
 .button{
@@ -246,6 +263,7 @@ a{
     border-radius: 5px;
     padding-top:5px;
     padding-bottom: 5px;
+    height: 40px;
     color: white;
     background-color: #0D6EFD;
     width: 65px;
@@ -257,4 +275,6 @@ a{
     background-color: #0b5fde;
 
 }
+
+
 
